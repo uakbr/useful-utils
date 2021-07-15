@@ -1,0 +1,126 @@
+---
+tools_dir: /opt/
+
+dev_make_dirs:
+  - '/opt/'
+
+dev_apt:
+  # ---------- SYSTEM MAINTENANCE TOOLS
+  - htop
+  - bc
+  - qalc
+  - ipcalc
+  - sipcalc
+  - network-manager-openvpn
+  # ---------- ARCHIVING
+  - p7zip-full
+  - p7zip-rar
+  - zip
+  - unzip
+  - unace
+  - unrar
+  - rar
+  - openvpn
+  - tree
+  # ---------- DEV TOOLS
+  - git
+  - emacs
+  - micro
+  - rsync
+  - curl
+  - tmux
+  - pwgen
+  - libreadline-dev
+  - lib32ncurses5-dev
+  - bat
+  - git-delta
+  - dog
+  - fonts-firacode
+  # ---------- COMPILING LIBRARIES
+  - gcc
+  - g++
+  - make
+  - automake
+  - build-essential
+  - dpkg-dev
+  - libssl-dev
+
+dev_brew:
+  - aws-vault
+  - azure-cli
+  - bash-completion
+  - bat
+  - dive
+  - doctl
+  - dog
+  - font-fira-code
+  - fzf
+  - gh
+  - git-delta
+  - go
+  - helm
+  - htop
+  - jq
+  - kube-ps1
+  - kubectx
+  - lens
+  - micro
+  - minikube
+  - multipass
+  - please
+  - pre-commit
+  - readline
+  - starship
+  - terraform
+  - tfsec
+  - tmate
+  - tmux
+  - tmux
+  - topgrade
+  - watch
+  - ykman
+  - sshuttle
+
+dev_pip:
+  - awscli
+  - yq
+
+#dev_easy_install:
+#  # - example
+
+# dev_gem:
+#   - package: example
+#     state: latest
+
+dev_go:
+  - github.com/charmbracelet/glow
+
+# dev_go_build:
+# - git_name: gobuster
+# go_folder: /root/go/src/github.com/OJ/gobuster/
+
+# dev_git_repositories:
+#   - repo: https://github.com/arthepsy/ssh-audit.git
+#     dest: "ssh-audit"
+
+# dev_shortcuts:
+# - example
+
+# dev_binary:
+# - url: https://raw.githubusercontent.com/raesene/TestingScripts/master/snmpv3enum.rb
+#   dest: "{{ tools_dir }}/snmpv3enum/snmpv3enum.rb"
+
+# dev_deb:
+# - /tmp/libssl1.0.0_1.0.1t-1+deb7u4_amd64.deb
+
+dev_tars:
+  - src: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+    dest: '{{ tools_dir }}/awscliv2/'
+
+dev_config:
+  - src: 'emacs'
+    dest: '~/.emacs'
+  - src: 'gitconfig'
+    dest: '~/.gitconfig'
+# dev_bash:
+#   - example
